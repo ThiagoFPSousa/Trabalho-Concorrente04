@@ -1,0 +1,42 @@
+.slider .thumb{
+  -fx-background-color:  #2D193B;
+}
+
+.slider .track {
+  -fx-background-color:  #3A2E42;
+}
+
+.slider .thumb:hover{
+  -fx-background-color:  #2D193B;
+  -fx-effect: dropshadow(three-pass-box, #2D193B, 10, 0.5, 0, 0);
+}
+
+.slider .thumb:active{
+  -fx-background-color:  #2D193B;
+  -fx-effect: dropshadow(three-pass-box, #2D193B, 10, 0.5, 0, 0);
+}
+
+.Slider{
+  -fx-cursor: hand;
+}
+
+.button {
+  -fx-background-color: #2D193B;
+  -fx-opacity: 1;
+  -fx-background-radius: 60px;
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0.5, 0, 0);
+}
+  
+.button:hover {    
+  -fx-background-color:#41334B;
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0.5, 0, 0);
+}
+  
+.button:pressed {  
+  -fx-background-color: #2D193B;
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0.5, 0, 0);
+}
+
+.custom-font-label {
+  -fx-font-family: "Burton's Nigthmare";
+}

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPanePrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerBurton">
+   <children>
+      <AnchorPane fx:id="anchorPaneInicial" prefHeight="400.0" prefWidth="600.0" visible="false">
+         <children>
+            <ImageView fx:id="imgInicial" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/img/imgBackgrounds/BarbeariaInicio.png" />
+               </image></ImageView>
+            <Button fx:id="btnIniciar" layoutX="114.0" layoutY="296.0" mnemonicParsing="false" onAction="#CliqueEmIniciar" prefHeight="60.0" prefWidth="60.0" style="-fx-cursor: hand;" stylesheets="@EstiloBurton.css" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <graphic>
+                  <ImageView fx:id="imgPlay" fitHeight="41.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/img/imgButtons/Play.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorPaneBarbearia" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="imgBarbearia" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/img/imgBackgrounds/BarbeariaPrincipal.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnBarbeiro" layoutX="45.0" layoutY="348.0" mnemonicParsing="false" onAction="#pausarBarbeiro" prefHeight="30.0" prefWidth="30.0" style="-fx-cursor: hand;" stylesheets="@EstiloBurton.css" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <graphic>
+                  <ImageView fx:id="imgBtnPauseBarbeiro" fitHeight="26.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/img/imgButtons/iconPause.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnClientes" layoutX="537.0" layoutY="348.0" mnemonicParsing="false" onAction="#pausarClientes" prefHeight="30.0" prefWidth="30.0" style="-fx-cursor: hand;" stylesheets="@EstiloBurton.css" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <graphic>
+                  <ImageView fx:id="imgBtnPauseClientes" fitHeight="26.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/img/imgButtons/iconPause.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Slider fx:id="sliderVelocidadeBarbeiro" blockIncrement="1.0" layoutX="82.0" layoutY="343.0" max="25.0" min="1.0" prefHeight="40.0" prefWidth="109.0" style="-fx-cursor: hand;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Slider>
+            <Slider fx:id="sliderVelocidadeClientes" blockIncrement="1.0" layoutX="424.0" layoutY="343.0" max="25.0" min="1.0" prefHeight="40.0" prefWidth="109.0" style="-fx-cursor: hand;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Slider>
+            <ImageView fx:id="cliente0" fitHeight="85.0" fitWidth="97.0" layoutX="259.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../resources/img/pokemonstros/BLASTOISE.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cliente1" fitHeight="94.0" fitWidth="90.0" layoutX="259.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../resources/img/pokemonstros/BULBASAUR.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cliente2" fitHeight="85.0" fitWidth="97.0" layoutX="259.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../resources/img/pokemonstros/BUTTERFREE.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cliente3" fitHeight="85.0" fitWidth="97.0" layoutX="259.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../resources/img/pokemonstros/CLEFABLE.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cliente4" fitHeight="85.0" fitWidth="97.0" layoutX="259.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../resources/img/pokemonstros/PIDGEY.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cliente5" fitHeight="85.0" fitWidth="97.0" layoutX="259.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../resources/img/pokemonstros/PIKACHU.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cliente6" fitHeight="85.0" fitWidth="97.0" layoutX="259.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../resources/img/pokemonstros/SANDSHREW.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cliente7" fitHeight="85.0" fitWidth="97.0" layoutX="259.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../resources/img/pokemonstros/SQUIRTLE.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cliente8" fitHeight="85.0" fitWidth="97.0" layoutX="259.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../resources/img/pokemonstros/WEEDLE.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="BtnReset" layoutX="281.0" layoutY="7.0" mnemonicParsing="false" onAction="#Resetar" prefHeight="30.0" prefWidth="30.0" style="-fx-cursor: hand;" stylesheets="@EstiloBurton.css">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/img/imgButtons/resetar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children></AnchorPane>
+      <Button fx:id="btnSom" layoutX="552.0" layoutY="14.0" mnemonicParsing="false" onAction="#som" prefHeight="30.0" prefWidth="25.0" style="-fx-cursor: hand;" stylesheets="@EstiloBurton.css">
+         <graphic>
+            <ImageView fx:id="imgBtnSom" fitHeight="19.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/img/imgButtons/desmudo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
